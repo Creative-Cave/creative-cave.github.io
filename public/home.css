@@ -1,0 +1,35 @@
+.staff-card {
+  background-color: #00022e;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.staff-card h3, p {
+  margin: 2px;
+}
+
+#discord-widget {
+  text-align: center;
+  margin: 40px;
+}
+
+#discord-widget iframe {
+  width: auto;
+  height: 500px;
+  transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
+  transform: scale(1);
+}
+
+#discord-widget iframe:hover {
+  transform: scale(1.01);
+}
+
+#staff-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 10px auto;
+}
