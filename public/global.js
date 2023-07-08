@@ -4,6 +4,3 @@ window.onload = function() {
     document.getElementById("fadein").remove();
   }, 6000);
 };
-
-// use twemoji
-twemoji.parse(document.body);
