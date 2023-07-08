@@ -3,7 +3,9 @@ html {
   width: 100%;
 }
 
-@import url(//fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&family=Montserrat:wght@400;500&family=Space+Grotesk:wght@700&display=swap);
+@import url(//fonts.googleapis.com/css?family=DM+Mono:300,500);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,500);
+@import url(//fonts.googleapis.com/css?family=Space+Grotesk:500);
 
 @keyframes fadeinall {
   0% {
