@@ -270,6 +270,10 @@ li::marker {
   animation: heartbeat 1.4s infinite;
 }
 
+.d3logo {
+  transform: translateY(2px);
+}
+
 #header-wrapper,
 #footer-wrapper {
   display: flex;
