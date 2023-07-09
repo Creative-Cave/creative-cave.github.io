@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Includes Twemoji assets - https://twemoji.twitter.com/ -->
+
 <head>
   <meta charset="UTF-8" />
   <title>Writer's Cave</title>
@@ -7,35 +10,44 @@
   <meta name="description" content="Welcome to Writer's Cave" />
   <link href="global.css" rel="stylesheet" type="text/css" />
   <link href="home.css" rel="stylesheet" type="text/css" />
-  <script src="global.js"></script>
+  <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <!-- header -->
+  <div id="header-wrapper"></div>
   <div id="root">
     <div id="fadein"></div>
-    <h1 class="title">Welcome to <a href="https://discord.com/invite/rjkJjJZBt3" target="_blank" rel="noopener noreferrer">Writer's Cave</a> <p class="wave">👋</p></h1>
+    <h1 class="title">Welcome to <a href="https://discord.com/invite/rjkJjJZBt3" target="_blank"
+        rel="noopener noreferrer">Writer's Cave</a>
+      <i class="emoji wave">👋</i>
+    </h1>
     <div id="description" class="text-centered">
       <p>
-        Welcome to Writer's Cave, a cosy community for authors, illustrators, writers, cartoonists and anyone in between to share their work and hone their craft in a warm environment where everyone is welcome.
+        Welcome to Writer's Cave, a cosy community for authors, illustrators, writers, cartoonists and anyone in between
+        to share their work and hone their craft in a warm environment where everyone is welcome.
       </p>
-    </br>
+      </br>
       <p>
-        We stand for creativity and expressing yourself through your work, and this is the ideology our community is built upon. Whether you tell stories to paint pictures or paint pictures to tell stories, there's always room for one more in Writer's Cave.
+        We stand for creativity and expressing yourself through your work, and this is the ideology our community is
+        built upon. Whether you tell stories to paint pictures or paint pictures to tell stories, there's always room
+        for one more in Writer's Cave.
       </p>
     </div>
-    
+
     <div id="discord-widget">
       <h2>Take a peek at our community:</h2>
-      <iframe src="https://discord.com/widget?id=915996676144111706&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discord.com/widget?id=915996676144111706&theme=dark" allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
-  
+
     <h1 class="text-centered">Staff</h1>
     <div id="staff-wrapper">
       {{ staff }}
     </div>
   </div>
-  <!-- footer -->
-  <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-  <script src="twemoji.js"></script>
+  <div id="footer-wrapper"></div>
+
+  <script src="global.js"></script>
 </body>
+
 </html>

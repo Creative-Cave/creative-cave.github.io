@@ -11,14 +11,17 @@ html {
   0% {
     opacity: 1;
   }
+
   97% {
     opacity: 0;
   }
+
   98% {
     opacity: 0;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     -webkit-transform: translateY(-100%);
@@ -28,12 +31,13 @@ html {
 }
 
 @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes pulse-glow {
@@ -42,11 +46,13 @@ html {
       0 0 0 rgba(255, 255, 255, 60%),
       0 0 20px teal;
   }
+
   50% {
     text-shadow:
       0 0 0 rgba(255, 255, 255, 60%),
       0 0 50px teal;
   }
+
   100% {
     text-shadow:
       0 0 0 rgba(255, 255, 255, 60%),
@@ -55,16 +61,65 @@ html {
 }
 
 @keyframes waveAnimation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
 }
-    
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(.9);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40% {
+    transform: scale(.9);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  80% {
+    transform: scale(.9);
+  }
+
+  100% {
+    transform: scale(.9);
+  }
+}
+
 #fadein {
   opacity: 1;
   position: fixed;
@@ -126,7 +181,12 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #5865f2;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Space Grotesk", sans-serif;
 }
 
@@ -194,17 +254,23 @@ li::marker {
 }
 
 .emoji {
+  font-style: normal;
   height: 1em;
-  
 }
 
 .wave {
   animation: 2.5s waveAnimation ease-out infinite;
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
-#header-wrapper, #footer-wrapper {
+.heartbeat img {
+  animation: heartbeat 1s infinite;
+}
+
+#header-wrapper,
+#footer-wrapper {
   display: flex;
   margin: 0;
   background-color: #00022e;
@@ -218,7 +284,8 @@ li::marker {
   z-index: 9999;
 }
 
-#header, #footer {
+#header,
+#footer {
   display: flex;
   width: auto;
   height: auto;
