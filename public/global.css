@@ -174,7 +174,7 @@ body::-webkit-scrollbar-thumb {
   margin: 3px;
   border-radius: 20px;
   padding: 3px;
-  transition: backgroud-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -266,7 +266,7 @@ li::marker {
 }
 
 .heartbeat img {
-  animation: heartbeat 2s infinite;
+  animation: heartbeat 1.4s infinite;
 }
 
 #header-wrapper,
