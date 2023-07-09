@@ -31,7 +31,7 @@ fetch("./components/wcLogo-svg.txt")
     }
   });
 
-  fetch("./components/d3Logo-svg.txt")
+fetch("./components/d3Logo-svg.txt")
   .then(res => res.text())
   .then(svgContent => {
     for (var i = 0; i < d3Logos.length; i++) {
