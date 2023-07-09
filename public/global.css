@@ -266,7 +266,7 @@ li::marker {
 }
 
 .heartbeat img {
-  animation: heartbeat 1s infinite;
+  animation: heartbeat 2s infinite;
 }
 
 #header-wrapper,
