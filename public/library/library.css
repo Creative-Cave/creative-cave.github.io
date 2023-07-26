@@ -3,34 +3,44 @@
     align-items: center;
     margin: 0 auto;
     width: 60%;
-    justify-content: space-evenly;
+    justify-content: stretch;
+    flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
 .library-card {
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
     text-align: center;
-    display: table-cell;
     width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0;
     max-width: 50%;
+    margin: 10px;
+    justify-content: center;
+    align-self: stretch;
+    transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
-.library-card p {
-    margin: auto 0;
-    vertical-align: middle;
+.library-card:hover {
+    transform: scale(1.05);
 }
 
 .library-card-title {
-    padding-top: 15px;
     font-family: "Space Grotesk";
     font-size: 1.2em;
+    margin: 0;
+}
+
+.library-card-author {
+    margin: 0;
 }
 
 .library-card-genre {
-    padding-bottom: 20px;
     font-style: italic;
     font-size: 0.9em;
+    margin: 0;
 }

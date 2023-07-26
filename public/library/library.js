@@ -14,7 +14,13 @@ function createCard(workData) {
     element.rel = "noopener noreferrer";
 
     element.classList += "library-card";
+
+    if (workData.genre == undefined) {
+        workData.genre = "Other";
+    }
+
     element.innerHTML = libraryCardTemplate.replace("{title}", workData.title).replace("{author}", workData.author).replace("{genre}", workData.genre);
+
     element.style.backgroundImage = generateRandomGradients();
     return element;
 }
