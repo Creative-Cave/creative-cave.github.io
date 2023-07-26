@@ -7,7 +7,12 @@ const libraryCardTemplate = `
 
 function createCard(workData) {
     console.log(workData);
-    let element = document.createElement("div");
+    let element = document.createElement("a");
+    
+    element.href = workData.url;
+    element.target = "_blank";
+    element.rel = "noopener noreferrer";
+
     element.classList += "library-card";
     element.innerHTML = libraryCardTemplate.replace("{title}", workData.title).replace("{author}", workData.author).replace("{genre}", workData.genre);
     element.style.backgroundImage = generateRandomGradients();
