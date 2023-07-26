@@ -3,7 +3,7 @@
     align-items: center;
     margin: 0 auto;
     width: 60%;
-    justify-content: stretch;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 10px;
