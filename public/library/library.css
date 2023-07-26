@@ -1,0 +1,36 @@
+#library-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.library-card {
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    display: table-cell;
+    width: auto;
+    flex: 1 1 0;
+    max-width: 50%;
+}
+
+.library-card p {
+    margin: auto 0;
+    vertical-align: middle;
+}
+
+.library-card-title {
+    padding-top: 15px;
+    font-family: "Space Grotesk";
+    font-size: 1.2em;
+}
+
+.library-card-genre {
+    padding-bottom: 20px;
+    font-style: italic;
+    font-size: 0.9em;
+}

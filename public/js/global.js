@@ -10,11 +10,11 @@ window.onload = function () {
 var headerWrapper = document.getElementById("header-wrapper");
 var footerWrapper = document.getElementById("footer-wrapper");
 
-fetch("./components/header.html")
+fetch(`${directory_root}/components/header.html`)
   .then(res => res.text())
   .then(html => headerWrapper.innerHTML = twemoji.parse(html));
 
-fetch("./components/footer.html")
+fetch(`${directory_root}/components/footer.html`)
   .then(res => res.text())
   .then(html => footerWrapper.innerHTML = twemoji.parse(html));
 
