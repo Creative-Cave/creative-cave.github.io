@@ -3,7 +3,7 @@
     align-items: center;
     margin: 0 auto;
     width: 60%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -13,20 +13,25 @@
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    width: auto;
-    height: auto;
+    min-width: 200px;
+    min-height: 120px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     flex: 1 1 0;
-    max-width: 50%;
-    margin: 10px;
     justify-content: center;
     align-self: stretch;
     transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
+.library-card p {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .library-card:hover {
-    transform: scale(1.05);
+    font-size: 1.05em;
+    transform: scale(1.03);
 }
 
 .library-card-title {
