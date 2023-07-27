@@ -25,7 +25,7 @@
 }
 
 .library-card p {
-    width: 80%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
