@@ -1,12 +1,25 @@
+@keyframes load-work {
+    0% {
+        transform: translateY(100px);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
 #library-container {
     display: flex;
     align-items: center;
     margin: 0 auto;
     width: 60%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 10px;
+    animation: slideInFromTop 1.4s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
 .library-card {
@@ -14,7 +27,7 @@
     border-radius: 15px;
     text-align: center;
     word-wrap: break-word;
-    min-width: 200px;
+    width: 200px;
     min-height: 120px;
     margin: 10px;
     display: flex;
@@ -26,22 +39,29 @@
 }
 
 .library-card:hover {
-    font-size: 1.05em;
     transform: scale(1.03);
+}
+
+.library-card:hover p {
+    transform: scale(1.05);
 }
 
 .library-card-title {
     font-family: "Space Grotesk";
     font-size: 1.2em;
     margin: 0;
+    width: 100%;
+    transition: all 0.5s;
 }
 
 .library-card-author {
     margin: 0;
+    transition: all 0.7s;
 }
 
 .library-card-genre {
     font-size: 0.8em;
     margin: 0;
     margin-top: 2px;
+    transition: all 0.9s;
 }

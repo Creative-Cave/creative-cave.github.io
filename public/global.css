@@ -336,5 +336,5 @@ li::marker {
 
 #root {
   flex: 1;
-  animation: 0.8s slideInFromTop cubic-bezier(0.26, 0.93, 0.65, 1);
+  animation: 1.2s slideInFromTop cubic-bezier(0.26, 0.93, 0.65, 1);
 }
