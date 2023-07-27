@@ -24,11 +24,6 @@
     transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
-.library-card p {
-    max-width: 95%;
-    margin: 0 auto;
-}
-
 .library-card:hover {
     font-size: 1.05em;
     transform: scale(1.03);
@@ -45,7 +40,7 @@
 }
 
 .library-card-genre {
-    font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.8em;
     margin: 0;
+    margin-top: 2px;
 }
