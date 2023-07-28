@@ -191,6 +191,18 @@ h6 {
   font-family: "Space Grotesk", sans-serif;
 }
 
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -293,7 +305,6 @@ li::marker {
 #footer {
   display: flex;
   width: auto;
-  height: auto;
   margin: 0;
   padding: 20px;
   justify-content: space-between;
