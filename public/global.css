@@ -131,7 +131,7 @@ html {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-  background-color: #00011f;
+  background-color: #00272e;
   z-index: 999;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -151,7 +151,7 @@ body {
   left: 0;
   right: 0;
   padding: 0;
-  background-color: #00011f;
+  background-color: #001a25;
   color: rgba(255, 255, 255, 100%);
   font-family: "Outfit", sans-serif;
   font-weight: medium;
@@ -290,7 +290,7 @@ li::marker {
 #footer-wrapper {
   display: flex;
   margin: 0;
-  background-color: #00022e;
+  background-color: #00272e;
   justify-content: center;
   width: 100%;
 }
