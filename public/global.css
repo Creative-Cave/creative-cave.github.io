@@ -286,6 +286,57 @@ li::marker {
   transform: translateY(2px);
 }
 
+.note-widget {
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  padding: 10px 15px;
+  max-width: 35%;
+  border: 3px solid #00272e;
+  background-color: #00272e8a;
+  border-radius: 12px;
+}
+
+.note-widget h3 {
+  margin: 5px;
+}
+
+.note-widget p {
+  margin: 5px;
+}
+
+.note-widget .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.note-widget .row p {
+  width: 60%;
+}
+
+.note-widget.emoji {
+  /**/
+}
+
+.primary-btn {
+  background-color: teal;
+  font-family: "Space Grotesk", sans-serif;
+  color: #ffffff;
+  padding: 0.3em 0.6em;
+  margin: 6px;
+  border-radius: 6px;
+  transition: all 0.8s;
+  user-select: none;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  transform: translateY(3px);
+}
+
 #header-wrapper,
 #footer-wrapper {
   display: flex;
