@@ -32,7 +32,13 @@ function updateSubmissionCounter(value) {
 
 function shuffle(obj) {
   const keys = Object.keys(obj);
-  const shuffledKeys = keys.sort(() => 0.5 - Math.random());
+  const shuffledKeys = [...keys];
+
+  for (let i = shuffledKeys.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledKeys[i], shuffledKeys[j]] = [shuffledKeys[j], shuffledKeys[i]];
+  }
+
   const shuffledObj = {};
 
   for (let key of shuffledKeys) {
