@@ -30,15 +30,27 @@ function updateSubmissionCounter(value) {
     counter.innerHTML = counter.innerHTML.replace("0", value);
 }
 
+function shuffle(obj) {
+  const keys = Object.keys(obj);
+  const shuffledKeys = keys.sort(() => 0.5 - Math.random());
+  const shuffledObj = {};
+
+  for (let key of shuffledKeys) {
+    shuffledObj[key] = obj[key];
+  }
+
+  return shuffledObj;
+}
+
 async function getLibrary() {
     var library;
     const response = await fetch(searchQueryURL);
     library = await response.json();
 
-    console.log(library);
+    console.log(library.library);
     updateSubmissionCounter(Object.keys(library.submissions).length);
 
-    for (workID in library.library) {
+    for (workID in shuffle(library.library)) {
         document.getElementById("library-container").appendChild(createCard(library.library[workID]));
     }
 
