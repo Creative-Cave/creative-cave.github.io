@@ -1,0 +1,258 @@
+:root {
+	--background-color: #d8e2e8;
+	--dark-color: #c4ced4;
+	--accent-color: #0cacd8;
+	--text-color: #2e2e2e;
+	--light-text-color: var(--background-color);
+}
+
+@font-face {
+	font-family: "Space Grotesk";
+	src: url("fonts/SpaceGrotesk.ttf") format("truetype-variations");
+}
+
+@font-face {
+	font-family: "Onest";
+	src: url("fonts/Onest.ttf") format("truetype-variations");
+}
+
+html {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	width: min(80vw, 800px);
+	margin: 0 auto;
+}
+
+nav {
+	background-color: var(--dark-color);
+	height: 40px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	user-select: none;
+}
+
+h3 {
+	font-size: 1.3em;
+	font-family: "Onest";
+}
+
+p {
+	font-family: "Onest";
+	font-size: 20px;
+	line-height: 1.4em;
+	margin: 10px 0;
+	text-align: center;
+}
+
+button {
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#navbar-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+	margin: 0 auto;
+}
+
+#navbar-list {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#logo {
+	display: flex;
+	font-family: "Space Grotesk";
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#logo-flame-svg {
+	margin-right: 10px;
+}
+
+#logo-flame-path {
+	fill: var(--text-color);
+}
+
+#header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	margin-top: 40px;
+}
+
+#title {
+	font-family: "Space Grotesk";
+	font-size: 2.8em;
+	margin: 20px;
+	text-align: center;
+	user-select: none;
+	width: 100%;
+}
+
+#header h2 {
+	font-family: "Onest";
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin: 20px;
+}
+
+#footer {
+	background-color: var(--dark-color);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 20px;
+}
+
+#title-cycle {
+	color: var(--accent-color);
+	font-weight: 200;
+}
+
+#about-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px;
+}
+
+#library-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-item {
+	margin: 10px;
+	width: 30%;
+	background-color: var(--dark-color);
+	padding: 20px;
+	border-radius: 15px;
+	flex-grow: 1;
+}
+
+.about-item h3,
+.about-item p {
+	margin: 0;
+	text-align: left;
+}
+
+.about-item p {
+	margin-top: 10px;
+}
+
+.navbar-item {
+	margin: 5px;
+	transition: all 0.2s ease-out;
+	width: 4em;
+	text-align: center;
+	font-family: "Onest";
+	user-select: none;
+}
+
+.navbar-item:hover {
+	cursor: pointer;
+	font-weight: 600;
+	color: var(--accent-color);
+}
+
+.join-button {
+	display: flex;
+	background-color: var(--accent-color);
+	color: var(--light-text-color);
+	font-weight: 700;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-family: "Onest";
+	margin: 20px auto;
+	transition: all 300ms;
+}
+
+.join-button:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	opacity: 0.5;
+}
+
+.join-button:active {
+	transform: scale(0.95);
+}
+
+.un {
+	display: inline-block;
+}
+
+.un::after {
+	content: "";
+	width: 0px;
+	height: 0.1em;
+	display: block;
+	background-color: var(--accent-color);
+	transform: translateY(-0.1em);
+	transition: width 0.5s;
+}
+
+.un:hover::after {
+	width: 100%;
+}
+
+.typed-cursor {
+	font-weight: 100;
+}
+
+.library-card {
+	display: flex;
+	background-color: var(--dark-color);
+	box-sizing: border-box;
+	width: auto;
+	flex-grow: 1;
+	margin: 10px;
+	padding: 30px;
+	height: 150px;
+	border-radius: 10px;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.library-card-title {
+	font-family: "Space Grotesk";
+	font-size: 1.5em;
+	line-height: 1.1em;
+	font-weight: 700;
+}
+
+.library-card-title,
+.library-card-author,
+.library-card-genre {
+	margin: 0;
+	overflow: hidden;
+}
+
+.library-card-genre {
+	display: none;
+}

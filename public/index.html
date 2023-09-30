@@ -1,63 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Creative Cave</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="components/cc_fav.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script>
+			directory_root = ".";
+		</script>
+	</head>
 
-<!-- Includes Twemoji assets - https://twemoji.twitter.com/ -->
+	<body>
+		<nav></nav>
+		<main>
+			<div id="header">
+				<h1 id="title">The home for <span id="title-cycle"></span></h1>
+				<hr style="width: 50%; margin: 10px" />
+			</div>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>The Creative Cave</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Welcome to the Creative Cave" />
-  <link href="global.css" rel="stylesheet" type="text/css" />
-  <link href="home.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="components/wc_favicon.png" />
-  <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-    directory_root = ".";
-  </script> 
-  <script defer src="js/global.js"></script>
-</head>
+			<p style="text-align: center; margin: 10px">
+				We're a cosy community for all kinds of creators to share their work and
+				hone their craft in a warm environment where everyone is welcome.
+			</p>
+			<p style="text-align: center; margin: 10px">
+				We stand for creativity and expressing yourself through your work, and
+				this is the ideology our community is built upon. Whether you tell
+				stories to paint pictures or paint pictures to tell stories, there's
+				always room for one more in the Creative Cave.
+			</p>
 
-<body>
-  <div id="header-wrapper"></div>
-  <div id="root">
-    <div id="fadein"></div>
-    <h1 class="title">Welcome to <a href="https://discord.com/invite/rjkJjJZBt3" target="_blank"
-        rel="noopener noreferrer">The Creative Cave</a>
-      <i class="emoji wave">👋</i>
-    </h1>
-    <div id="description" class="text-centered">
-      <p>
-        Welcome to the Creative Cave, a cosy community for authors, illustrators, writers, cartoonists and anyone in between
-        to share their work and hone their craft in a warm environment where everyone is welcome.
-      </p>
-      </br>
-      <p>
-        We stand for creativity and expressing yourself through your work, and this is the ideology our community is
-        built upon. Whether you tell stories to paint pictures or paint pictures to tell stories, there's always room
-        for one more in the Creative Cave.
-      </p>
-    </div>
-    <a href="/library">
-      <div class="note-widget">
-        <div class="row">
-          <h3>Where is the library?</h3>
-          <p>Well, you're on our website so you're 90% of the way there already - head to the index through the navbar at the top of this page, or if you're feeling lazy, just click this banner :)</p>
-        </div>
-      </div>
-    </a>
-    <div id="discord-widget">
-      <h2>Take a peek at our community:</h2>
-      <iframe src="https://discord.com/widget?id=915996676144111706&theme=dark" allowtransparency="true" frameborder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
+			<div id="about-grid">
+				<div class="about-item">
+					<h3><i class="fa-solid fa-comments"></i> Warm community</h3>
+					<p>
+						With friendly staff and a welcoming environment, the Creative Cave
+						is the perfect place to share your work and learn from others.
+					</p>
+				</div>
+				<div class="about-item">
+					<h3><i class="fa-solid fa-scale-balanced"></i> Fair rules</h3>
+					<p>
+						We think most Discord servers' rules are unjust and unrealistic, so
+						we've done our absolute best to strike a balance between freedom and
+						friendliness.
+					</p>
+				</div>
+				<div class="about-item">
+					<h3><i class="fa-solid fa-star"></i> Talented members</h3>
+					<p>
+						Many of our members are very talented at what they do, and we're
+						sure they are more than happy to help and give feedback wherever
+						it's needed.
+					</p>
+				</div>
+				<div class="about-item">
+					<h3><i class="fa-solid fas fa-globe-americas"></i> Inclusive environment</h3>
+					<p>
+						There are people in the Creative Cave from all kinds of backgrounds
+						and walks of life: here, the only thing more important than
+						creativity is being able to be yourself without fear of judgement.
+					</p>
+				</div>
+			</div>
 
-    <h1 class="text-centered">Staff</h1>
-    <div id="staff-wrapper">
-      {{ staff }}
-    </div>
-  </div>
-  <div id="footer-wrapper"></div>
-</body>
+			<a
+				href="https://discord.com/invite/rjkJjJZBt3"
+				ref="noopener noreferrer"
+				target="_blank"
+			>
+				<button class="join-button">Join the community!</button>
+			</a>
+		</main>
 
+		<footer id="footer"></footer>
+
+		<script
+			src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="home.js"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
