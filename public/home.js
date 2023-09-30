@@ -5,12 +5,8 @@ var cycleStrings = [
     "creators",
     "writers",
     "artists",
-    "photographers",
-    "designers",
-    "musicians",
-    "programmers",
-    "hobbyists",
-    "web developers",
+    "developers",
+    "musicians"
 ];
 var index = 0;
 
