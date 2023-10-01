@@ -128,6 +128,7 @@ a {
 	text-align: center;
 	user-select: none;
 	width: 100%;
+	animation: slide-up 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
 #header h2 {
@@ -172,6 +173,7 @@ a {
 	padding: 20px;
 	border-radius: 15px;
 	flex-grow: 1;
+	animation: slide-up 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
 .about-item h3,
