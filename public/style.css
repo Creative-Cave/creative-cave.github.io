@@ -101,15 +101,24 @@ a {
 	font-family: "Space Grotesk";
 	align-items: center;
 	flex-direction: row;
-	justify-content: center;
 }
 
 #logo-flame-svg {
 	margin-right: 10px;
+	transition: all 0.2s ease-out;
 }
 
 #logo-flame-path {
 	fill: var(--text-color);
+	transition: all 0.2s ease-out;
+}
+
+#logo-flame-svg:hover {
+	transform: scale(1.2);
+}
+
+#logo-flame-svg:hover #logo-flame-path {
+	fill: var(--accent-color);
 }
 
 #header {
