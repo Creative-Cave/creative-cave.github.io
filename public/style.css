@@ -176,6 +176,12 @@ a {
 	align-items: start;
 }
 
+.emoji {
+	height: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+}
+
 .about-item {
 	margin: 10px;
 	width: 30%;
@@ -251,6 +257,13 @@ a {
 
 .un:hover::after {
 	width: 100%;
+}
+
+.notice {
+	border: 2px solid var(--accent-color);
+	padding: 10px;
+	border-radius: 10px;
+	margin: 20px;
 }
 
 .typed-cursor {
