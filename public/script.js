@@ -1,6 +1,10 @@
 // include header and footer on every page
-var navbar = document.getElementsByTagName("nav")[0];
-var footer = document.getElementsByTagName("footer")[0];
+try {
+	var navbar = document.getElementsByTagName("nav")[0];
+	var footer = document.getElementsByTagName("footer")[0];
+} catch (e) {}
+
+
 
 if (navbar) {
 	fetch(`${directory_root}/components/header.html`)
