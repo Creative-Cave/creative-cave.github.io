@@ -172,7 +172,8 @@ a {
 
 #library-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: start;
 }
 
 .about-item {
@@ -258,47 +259,37 @@ a {
 
 .library-card {
 	display: flex;
-	background-color: var(--dark-color);
-	box-sizing: border-box;
-	width: auto;
-	flex-grow: 1;
+	text-align: left;
 	margin: 10px;
-	padding: 30px;
-	height: 150px;
+	width: 100%;
+	padding: 10px 20px;
 	border-radius: 10px;
-	flex-direction: column;
-	justify-content: center;
-	animation: slide-up 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
-	transition: all 0.2s ease-out;
+	transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
+	align-items: center;
+	justify-content: space-between;
 }
 
 .library-card:hover {
-	cursor: pointer;
-	background-color: var(--accent-color);
-	color: var(--light-text-color);
-	transform: scale(1.02);
+	background-color: var(--dark-color);
 }
 
 .library-card:hover .library-card-genre {
-	height: 1.25em;
+	opacity: 1;
+}
+
+.library-card p {
+	text-align: left;
+	margin: 0;
 }
 
 .library-card-title {
-	font-family: "Space Grotesk";
-	font-size: 1.5em;
-	line-height: 1.1em;
-	font-weight: 700;
-}
-
-.library-card-title,
-.library-card-author,
-.library-card-genre {
-	margin: 0;
-	overflow: hidden;
+	font-family: "Space Grotesk", sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
 }
 
 .library-card-genre {
+	opacity: 0;
 	overflow: hidden;
-	height: 0;
-	transition: all 0.2s ease-out;
+	transition: all 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }

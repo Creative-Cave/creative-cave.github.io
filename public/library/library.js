@@ -1,8 +1,12 @@
 var url = "https://raw.githubusercontent.com/Writers-Cave/data/main/library/library.json";
 const libraryCardTemplate = `
-<p class="library-card-title">{title}</p>
-<p class="library-card-author">{author}</p>
-<p class="library-card-genre">{genre}</p>`
+<div>
+    <p class="library-card-title">{title}</p>
+    <p class="library-card-author">by {author}</p>
+</div>
+<div>
+    <p class="library-card-genre">{genre}</p>
+</div>`
 
 function createCard(workData) {
     console.log(workData);

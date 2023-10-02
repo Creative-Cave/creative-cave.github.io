@@ -12,7 +12,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-        <script>
+		<script>
 			directory_root = "..";
 		</script>
 	</head>
@@ -20,17 +20,19 @@
 	<body>
 		<nav></nav>
 		<main>
-			<h1 style="margin: 40px auto; text-align: center; sans-serif;">
-                The Creative Cave Library
-            </h1>
-            <p>
-                The library is currently a work
-                in progress. Please be patient!
-            </p>
-            <div id="library-container"></div>
-        </main>
+			<h1 id="title" style="margin: 40px auto;">
+				The Creative Cave Library
+			</h1>
+			<p>The library is currently a work in progress. Please be patient!</p>
+			<p>
+				Works with a <i class="fa-solid fa-triangle-exclamation"></i>
+				symbol next to them means that they may cover sensitive, triggering or
+				offensive content. More details can be found upon hovering.
+			</p>
+			<div id="library-container"></div>
+		</main>
 
-        <footer id="footer"></footer>
+		<footer id="footer"></footer>
 
 		<script
 			src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"
@@ -42,7 +44,7 @@
 			crossorigin="anonymous"
 		></script>
 
-        <script src="library.js"></script>
+		<script src="library.js"></script>
 		<script src="../script.js"></script>
 	</body>
 </html>
