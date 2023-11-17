@@ -187,7 +187,7 @@ a {
 
 #library-container {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	align-items: start;
 	margin-bottom: 100px;
 }
@@ -202,7 +202,7 @@ a {
 	margin: 10px;
 	width: 30%;
 	background-color: var(--dark-color);
-	padding: 20px;
+	padding: 25px;
 	border-radius: 15px;
 	flex-grow: 1;
 	animation: slide-up 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
@@ -288,25 +288,25 @@ a {
 
 .library-card {
 	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	background-color: var(--text-color);
+	color: var(--light-text-color);
+	opacity: 0.5;
 	text-align: left;
 	margin: 10px;
-	width: 100%;
-	padding: 10px 20px;
+	padding: 30px;
 	border-radius: 10px;
-	align-items: center;
-	justify-content: space-between;
+	align-items: left;
 	transition: background-color, transform 0.2s cubic-bezier(0.26, 0.93, 0.65, 1);
 	animation: pop-in 0.5s cubic-bezier(0.26, 0.93, 0.65, 1);
 }
 
 .library-card:hover {
 	background-color: var(--accent-color);
+	opacity: 1;
 	color: var(--light-text-color);
 	transform: scale(1.02);
-}
-
-.library-card:hover .library-card-genre {
-	width: 100%;
 }
 
 .library-card p {
@@ -320,9 +320,10 @@ a {
 	font-weight: 600;
 }
 
+.library-card-author {
+	font-style: italic;
+}
+
 .library-card-genre {
-	width: 0;
-	float: right;
-	overflow: hidden;
-	transition: all 0.2s cubic-bezier(0.26, 0.93, 0.65, 1);
+	opacity: 0.5;
 }
